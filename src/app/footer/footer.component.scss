@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+  background-color: #222;
+  .wrapper {
+    padding: 30px;
+    display: flex;
+    .left {
+      flex: 1;
+      .map {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    .right {
+      flex: 1;
+      color: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .address {
+        font-size: 14px;
+        font-weight: 500;
+        color: yellow;
+      }
+      .contact {
+        font-size: 19px;
+        font-weight: 100;
+        color: rgb(0, 255, 140);
+      }
+    }
+  }
+}

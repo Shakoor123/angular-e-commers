@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  cursor: pointer;
+  margin-top: 10px;
+  .top {
+    padding: 10px;
+    .image {
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+      &:hover {
+        scale: 0.8;
+        background-size: cover;
+      }
+    }
+    border-bottom: 1px solid gray;
+  }
+  .details {
+    display: flex;
+    padding: 15px;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .price {
+      color: blue;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+}
