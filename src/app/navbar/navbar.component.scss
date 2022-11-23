@@ -2,8 +2,11 @@
   width: 100vw;
   background-image: linear-gradient(to top, #d8f8f8 0%, #b990eb 100%);
   border-bottom: 0.5px solid rgb(0, 0, 0);
-  height: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
   .wrapper {
+    width: 100%;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -19,6 +22,7 @@
       display: flex;
       width: 150px;
       justify-content: space-between;
+      align-items: center;
       .button {
         cursor: pointer;
         background-color: lightblue;
@@ -30,6 +34,14 @@
         border: 1px solid blue;
         font-size: 14px;
         color: rgb(84, 75, 75);
+      }
+      .cart {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.503);
+        padding: 3px;
+        border-radius: 15px;
       }
     }
   }

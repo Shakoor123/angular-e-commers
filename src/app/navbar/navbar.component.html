@@ -2,8 +2,13 @@
   <div class="wrapper">
     <div class="logo">TVA</div>
     <div class="buttons">
-      <button class="button">Sign-In</button>
-      <button class="button">Sign-up</button>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png"
+        alt=""
+        class="cart"
+        *ngIf="user"
+      />
+      <button class="button" *ngIf="button">Sign-In</button>
     </div>
   </div>
 </div>
