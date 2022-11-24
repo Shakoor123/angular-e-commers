@@ -1,6 +1,6 @@
 .navbar {
   width: 100vw;
-  background-image: linear-gradient(to top, #d8f8f8 0%, #b990eb 100%);
+  background-image: linear-gradient(to top, #33343a 0%, #6f6976 100%);
   border-bottom: 0.5px solid rgb(0, 0, 0);
   height: 70px;
   display: flex;
@@ -15,7 +15,7 @@
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: rgb(4, 0, 255);
+      color: rgb(255, 255, 255);
       cursor: pointer;
     }
     .buttons {
@@ -35,13 +35,30 @@
         font-size: 14px;
         color: rgb(84, 75, 75);
       }
-      .cart {
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        border: 1px solid rgba(0, 0, 0, 0.503);
-        padding: 3px;
-        border-radius: 15px;
+      .image-container {
+        position: relative;
+        .cart {
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          border: 1px solid rgba(0, 0, 0, 0.503);
+          padding: 3px;
+          border-radius: 15px;
+        }
+        .count {
+          position: absolute;
+          top: -8px;
+          right: -5px;
+          background-color: rgb(73, 73, 235);
+          color: white;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid white;
+        }
       }
     }
   }

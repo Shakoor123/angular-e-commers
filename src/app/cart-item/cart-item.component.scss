@@ -1,0 +1,47 @@
+.cartItem {
+  display: flex;
+  border-bottom: 1px solid green;
+  .wrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    .left {
+      .image {
+        width: 150px;
+        height: auto;
+      }
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .title {
+        font-size: 14px;
+      }
+      .instock {
+        color: green;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .details {
+        font-size: 13px;
+      }
+      .quantity {
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        .qty {
+          width: 30px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

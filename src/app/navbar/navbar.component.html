@@ -2,12 +2,16 @@
   <div class="wrapper">
     <div class="logo">TVA</div>
     <div class="buttons">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png"
-        alt=""
-        class="cart"
-        *ngIf="user"
-      />
+      <div class="image-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png"
+          alt=""
+          class="cart"
+          *ngIf="user"
+        />
+        <span class="count">0</span>
+      </div>
+
       <button class="button" *ngIf="button">Sign-In</button>
     </div>
   </div>

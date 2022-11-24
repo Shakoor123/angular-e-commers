@@ -11,6 +11,8 @@ import { CardComponent } from './card/card.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/product.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { ProductComponent } from './product/product.component';
     CardComponent,
     FooterComponent,
     ProductComponent,
+    CartComponent,
+    CartItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
