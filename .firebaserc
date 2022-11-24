@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-ecommers": {
+      "hosting": {
+        "e-commers": [
+          "angular-ecommers"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-ecommers"
+  }
+}
