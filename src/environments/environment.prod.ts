@@ -13,6 +13,3 @@ export const environment = {
   },
   production: true,
 };
-const app = initializeApp(environment.firebase);
-
-export const db = getFirestore(app);

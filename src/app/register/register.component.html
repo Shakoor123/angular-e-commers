@@ -3,16 +3,22 @@
     <h1 class="title">Register</h1>
     <div class="inputItem">
       <span class="text">user-Name</span>
-      <input type="text" name="" class="input" id="" />
+      <input
+        type="text"
+        name="name"
+        class="input"
+        id="name"
+        [(ngModel)]="name"
+      />
     </div>
     <div class="inputItem">
       <span class="text">user-Email</span>
-      <input type="text" name="" class="input" id="" />
+      <input type="text" name="" class="input" id="" [(ngModel)]="email" />
     </div>
     <div class="inputItem">
       <span class="text">user-Password</span>
-      <input type="text" name="" class="input" id="" />
+      <input type="text" name="" class="input" id="" [(ngModel)]="password" />
     </div>
-    <button class="button">Register</button>
+    <button class="button" (click)="register()">Register</button>
   </div>
 </div>
