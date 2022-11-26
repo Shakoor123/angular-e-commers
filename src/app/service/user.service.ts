@@ -10,4 +10,7 @@ export class UserService {
     user.id = this.afs.createId();
     return this.afs.collection('users').add(user);
   }
+  loginProcess() {
+    return this.afs.collection('users').valueChanges();
+  }
 }

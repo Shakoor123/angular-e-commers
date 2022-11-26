@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { UserService } from '../service/user.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -10,15 +12,14 @@ export class RegisterComponent implements OnInit {
   email: string | undefined;
   password: string | undefined;
   errorMessage: string | undefined;
-  constructor() {}
+  user: any;
+  constructor(private userService: UserService, private router: Router) {}
   ngOnInit(): void {}
-  // register = async () => {
-  //   try {
-  //   } catch (e) {
-  //     console.error('Error adding document: ', e);
-  //   }
-  // };
+
   register() {
-    console.log(this.name, this.password, this.email);
+    this.user = { name: this.name, password: this.password, email: this.email };
+    this.userService.addUser(this.user).then((res) => {
+      this.router.navigate(['home']);
+    });
   }
 }

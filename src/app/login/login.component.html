@@ -3,12 +3,12 @@
     <h1 class="title">Login</h1>
     <div class="inputItem">
       <span class="text">user-Email</span>
-      <input type="text" name="" class="input" id="" />
+      <input type="text" name="" class="input" id="" [(ngModel)]="email" />
     </div>
     <div class="inputItem">
       <span class="text">user-Password</span>
-      <input type="text" name="" class="input" id="" />
+      <input type="text" name="" class="input" id="" [(ngModel)]="password" />
     </div>
-    <button class="button">Log-In</button>
+    <button class="button" (click)="login()">Log-In</button>
   </div>
 </div>
