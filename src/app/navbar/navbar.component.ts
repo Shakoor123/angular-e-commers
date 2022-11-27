@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   user = true;
   button: boolean | true = false;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     if (this.user == true) {
@@ -16,5 +17,8 @@ export class NavbarComponent implements OnInit {
     } else {
       this.button = true;
     }
+  }
+  gotohome() {
+    this.router.navigate(['home']);
   }
 }

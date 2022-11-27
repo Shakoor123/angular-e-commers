@@ -21,9 +21,7 @@ export class LoginComponent implements OnInit {
     this.logins = this.userService.loginProcess().subscribe((res) => {
       console.log(res);
       this.arrLen = res.length;
-      // for(){
-
-      // }
+      // for (var i = 0; i < this.arrLen; i++) {}
     });
     // this.router.navigate(['home']);
   }
